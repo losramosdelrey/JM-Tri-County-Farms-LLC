@@ -2,7 +2,7 @@
   padding: 9rem 0 4rem;
   text-align: center;
   background: linear-gradient(135deg, rgba(18,41,28,0.9), rgba(26,60,42,0.8)),
-    url('https://images.unsplash.com/photo-1558904541-efa843a96f01?q=80&w=1600') center/cover;
+    url('../images/backgrounds/hero.jpg') center/cover;
   color: #fff;
 }
 .galeria-hero h1 { color: #fff; font-size: clamp(2.2rem, 5vw, 3.2rem); margin-bottom: 0.75rem; }

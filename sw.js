@@ -1,5 +1,5 @@
 /* JM Tri County Farms LLC Service Worker - Basic PWA offline support */
-const CACHE_NAME = 'jm-tricounty-v5';
+const CACHE_NAME = 'jm-tricounty-v6';
 const ASSETS = [
   '/',
   '/index.html',
@@ -24,6 +24,21 @@ const ASSETS = [
   '/js/cotizar.js',
   '/images/flags/es.svg',
   '/images/flags/us.svg',
+  '/images/backgrounds/hero.jpg',
+  '/images/backgrounds/hero-full.jpg',
+  '/images/backgrounds/garden-1.jpg',
+  '/images/backgrounds/garden-2.jpg',
+  '/images/backgrounds/garden-3.jpg',
+  '/images/galeria/g1.jpg',
+  '/images/galeria/g2.jpg',
+  '/images/galeria/g3.jpg',
+  '/images/galeria/g4.jpg',
+  '/images/galeria/g5.jpg',
+  '/images/galeria/g6.jpg',
+  '/images/servicios/about.jpg',
+  '/images/banners/testimonios/cuca.webp',
+  '/images/banners/testimonios/hombre.webp',
+  '/images/banners/testimonios/rubia.webp',
   '/manifest.json'
 ];
 

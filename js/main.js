@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   if (document.readyState === 'complete') reveal();
   else window.addEventListener('load', reveal);
-  setTimeout(reveal, 1500); // seguridad: nunca dejar la pantalla tapada
+  setTimeout(reveal, 2800); // seguridad: nunca dejar la pantalla tapada
 
   window.addEventListener('pageshow', function (e) {
     if (e.persisted) curtain.classList.remove('cover'); // volver atrás (bfcache)
@@ -121,6 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (u.pathname === location.pathname && u.search === location.search) return;
     e.preventDefault();
     curtain.classList.add('cover');
-    setTimeout(function () { location.href = u.href; }, reduce ? 0 : 560);
+    setTimeout(function () { location.href = u.href; }, reduce ? 0 : 1100);
   });
 })();
