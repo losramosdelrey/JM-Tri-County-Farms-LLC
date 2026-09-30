@@ -1,0 +1,8 @@
+/* Install button specific styles */
+.float-install {
+  animation: pulse-install 2.5s ease-in-out infinite;
+}
+@keyframes pulse-install {
+  0%, 100% { box-shadow: 0 6px 24px rgba(201, 168, 76, 0.4); }
+  50% { box-shadow: 0 6px 32px rgba(201, 168, 76, 0.7); }
+}

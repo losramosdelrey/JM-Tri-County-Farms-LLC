@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sin conexión | JM Tri County Farms LLC</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, sans-serif;
+      background: #1a3c2a;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 { font-size: 2rem; margin-bottom: 1rem; }
+    p { opacity: 0.85; margin-bottom: 1.5rem; }
+    a {
+      display: inline-block;
+      background: #c9a84c;
+      color: #12291c;
+      padding: 0.85rem 1.8rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>🌿 <span id="o1">Sin conexión</span></h1>
+    <p id="o2">Parece que no tienes internet en este momento.<br>Puedes contactarnos directamente:</p>
+    <p><strong>+1 (561) 667-0705</strong></p>
+    <a href="tel:+15616670705" id="o3">Llamar ahora</a>
+  </div>
+  <script>
+    try {
+      if (localStorage.getItem('ve-lang') === 'en') {
+        document.documentElement.lang = 'en';
+        document.title = 'Offline | JM Tri County Farms LLC';
+        document.getElementById('o1').textContent = 'You are offline';
+        document.getElementById('o2').innerHTML = 'It looks like you have no internet right now.<br>You can contact us directly:';
+        document.getElementById('o3').textContent = 'Call now';
+      }
+    } catch (e) {}
+  </script>
+</body>
+</html>
