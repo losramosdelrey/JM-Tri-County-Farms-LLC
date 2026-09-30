@@ -1,8 +1,8 @@
 /* JM Tri County Farms LLC - Service Worker
- * v7: rutas relativas (funciona en raíz o subcarpeta), HTML network-first,
+ * v9: contacto por email y/o móvil. v8: mensaje de cotización con email y móvil del cliente. v7: rutas relativas (funciona en raíz o subcarpeta), HTML network-first,
  *     precache tolerante a fallos y fallback offline solo para páginas.
  */
-const VERSION = 'v7';
+const VERSION = 'v9';
 const CACHE_NAME = 'jm-tricounty-' + VERSION;
 const ASSETS = [
   './',
