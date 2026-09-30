@@ -1,15 +1,8 @@
-/* Install button pulse — mobile */
-.float-install.show {
-  animation: pulse-install 2.8s ease-in-out infinite;
-}
-@keyframes pulse-install {
-  0%, 100% { box-shadow: 0 8px 28px rgba(201, 168, 76, 0.35); }
-  50% { box-shadow: 0 10px 36px rgba(201, 168, 76, 0.55); }
-}
+/* El botón de instalar hereda tamaño, forma y sombra de .float-btn (main.css).
+   Solo se muestra en móvil/tablet. */
 @media (min-width: 981px) {
   .float-install,
   .float-install.show {
     display: none !important;
-    animation: none !important;
   }
 }

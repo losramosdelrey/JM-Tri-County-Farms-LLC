@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/install.css">
   <link rel="manifest" href="manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="JM Tri County">
   <link rel="icon" href="icons/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="icons/icon-192.png">
 </head>
@@ -249,7 +252,7 @@
   <script src="js/install.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js').catch(() => {});
+      navigator.serviceWorker.register('sw.js').catch(() => {});
     }
   </script>
 </body>
